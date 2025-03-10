@@ -106,7 +106,7 @@ function App() {
         <HeaderLeft>
           <AnimatedCircle>
             <ProfileImage 
-              src="./resources/star.png"
+              src="/xiaotong-shen.github.io/resources/star.png"
               alt="Profile"
               animate={{
                 rotate: 360
@@ -134,7 +134,7 @@ function App() {
             Contact
           </NavLink>
           <NavLink
-            href="./resources/resume.pdf"
+            href="/xiaotong-shen.github.io/resources/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
