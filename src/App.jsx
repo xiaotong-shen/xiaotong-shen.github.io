@@ -8,26 +8,34 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header />
+      <div style={{ height: '70px' }}></div>
+      <Hero />
+    </>
+  )
+}
+
+function Header() {
+  return (
+    <div style={{ position: 'fixed', left: 0, top: 0, right: 0, width: '100vw',  
+    display: 'flex', justifyContent: 'space-around', alignItems: 'right', padding: '25px 20px' }}>
+      <div style={{ flex: 4 }}></div>
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', padding: '0 20px' }}>
+        <a href='./resume.pdf' target='_blank'>resume</a>
+        <a href='https://www.linkedin.com/in/shen-xiaotong/' target='_blank'>contact</a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </div>
+  )
+}
+
+function Hero() {
+  return (
+    <>
+      <h1>Xiaotong Shen</h1>
+      <p>Software Developer</p>
+      <div style={{ height: '10px' }}></div>
+      <div style={{ height: '10px' }}></div>
+      <img src={'src/assets/star.png'} alt="star" width={100} height={100}/>
     </>
   )
 }
